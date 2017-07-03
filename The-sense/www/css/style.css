@@ -1,0 +1,207 @@
+@charset "utf-8";
+/*--------------selection------*/
+::selection{
+	background: #666;
+	color: white;
+}
+::-webkit-selection{
+	background: #666;
+	color: white;
+}
+::-moz-selection{
+	background: #666;
+	color: white;
+}
+::-o-selection{
+	background: #666;
+	color: white;
+}
+::-ms-selection{
+	background: #666;
+	color: white;
+}
+/*----------------Общие------*/
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html{height: 100%;}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #D3D3D3;
+	color: #333;
+	font-family:"Monotype Corsiva", "Century Gothic", "Palatino Linotype", "Consolas", cursive, sans-serif;
+	font-size: 1.2em;
+	line-height: 135%;
+	float: left;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+	float: left;
+}
+/*---------------header------------*/
+header{
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fff;
+	box-shadow: 0 0 50px gray;
+	margin-bottom: 20px;
+}
+header #logo{
+	width: 40%;
+	float: left;
+	
+	text-align: center;	
+	font-family: Mistral, monospace;
+}
+header #menu_head{
+	width: 22%;
+	float: left;
+	
+}
+header #regauth{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+header #logo #T{
+	color:#FF3C00;
+}
+header #logo a, header #logo a:hover{
+	color: #666;
+	transition: none;
+	font-size: 2.5em;
+}
+header #menu_head div, header #regauth div{ 
+	margin-right: 5%;
+	padding-right: 3px;
+	background-color: #FBF6F6;
+	border-radius: 5px;
+}
+header #regauth div{float : right;}
+header #menu_head div{float: left;}
+header #menu_head a, header #menu_head a:hover, header #regauth a, header #regauth a:hover{
+	color:#666;
+	transition: none;
+	font-size: 1.2em;
+}
+/*---------------ТЕЛО-------*/
+#wrapper{
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+#wrapper #leftCol{
+	min-height: 200px;
+	padding: 1%;
+	width: 68%;
+	float: left;
+	margin-right: 10%;
+}
+#wrapper #rightCol{
+	min-height: 200px;
+	width: 18%;
+	padding: 1%;
+	float: left;
+}
+#wrapper #rightCol .banner{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+#wrapper #leftCol #bigarticle{
+	width: 88%;
+	min-height: 200px;
+	float: left;
+	margin-left: 5%;
+	background-color: white;
+	/*box-shadow: 0 0 15px gray;*/
+	padding: 1%;
+}
+#wrapper #leftCol #bigarticle:hover,#wrapper #leftCol .article:hover, #wrapper #leftCol #about_us:hover{box-shadow: 0 0 50px gray;}
+#wrapper #leftCol #bigarticle img{margin: -7px 15px 0 -8px;}
+#wrapper #leftCol #bigarticle p {
+	width: 90%;
+	margin-left: 5%;
+}
+#wrapper #leftCol .article{
+	width: 40%;
+	margin-left: 5.3%;
+	background-color: white;
+	/*box-shadow: 0 0 15px gray;*/
+	padding: 1%;
+	float: left;
+}
+#wrapper #leftCol .article img{margin-bottom: 5px;}
+#wrapper #leftCol .article p{
+	width: 90%;
+	margin-left: 5%;
+}
+#wrapper #leftCol .article h2, #wrapper #leftCol #bigarticle h2, #wrapper #leftCol #about_us h2{
+	font-weight: normal;
+	color: #666;
+	font-family: mistral;
+}
+/*-------------- О нас--------*/
+#wrapper #leftCol #about_us{
+	width: 76%;
+	margin-left: 10%;
+	background-color: white;
+	/*box-shadow: 0 0 10px gray;*/
+	padding: 2%;
+}
+/*----------------footer-------*/
+footer{
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: white;
+	box-shadow: 0 0 50px gray;
+	margin-top: 20px;
+}
+footer #social{
+	float: left;
+	width: 50%;
+}
+footer #rights{
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+footer #social a img{
+	float: left;
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+/*-------------------Сылки-----*/
+a{
+	color: #f0004f;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+a:hover {
+	color: #666;
+}
+a, a:hover,#wrapper #leftCol #bigarticle,#wrapper #leftCol #bigarticle:hover, #wrapper #leftCol .article, #wrapper #leftCol .article:hover, #wrapper #leftCol #about_us, #wrapper #leftCol #about_us:hover {
+	-webkit-transition: all.7s ease;
+	-moz-transition: all.7s ease;
+	-o-transition: all.7s ease;
+	-ms-transition: all.7s ease;
+	transition: all.7s ease;
+}
+/*----------Классы------------*/
+.clear{clear: both;}
+/*-----------ID---------------*/
+#N{
+	border-radius: 23px;
+	margin-left: 13px;
+}
