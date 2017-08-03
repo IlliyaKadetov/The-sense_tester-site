@@ -26,7 +26,14 @@
 	padding: 0;
 	outline: none;
 }
-html{height: 100%;}
+html{
+	height: 100%;
+	width: 100%;
+}
+hr{
+	width: 80%;
+	margin-left: 10%;
+}
 body{
 	width: 100%;
 	height: 100%;
@@ -39,10 +46,13 @@ body{
 }
 img{
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 	width: auto\9;
 	float: left;
 }
+/*Для Пк и Планшетов больше 789px в ширину c аольбомной ориетнацией----------*/
+@media(min-width: 800px) and (orientation: landscape){
 /*---------------header------------*/
 header{
 	width: 98%;
@@ -113,7 +123,7 @@ header #menu_head a, header #menu_head a:hover, header #regauth a, header #regau
 	width: 100%;
 	float: left;
 	margin-bottom: 50px;
-	border-radius: 10px;
+	border-radius: 15px;
 	box-sizing: border-box;
 }
 #wrapper #leftCol #bigarticle{
@@ -122,21 +132,22 @@ header #menu_head a, header #menu_head a:hover, header #regauth a, header #regau
 	float: left;
 	margin-left: 5%;
 	background-color: white;
-	/*box-shadow: 0 0 15px gray;*/
 	padding: 1%;
+	margin-bottom: 25px;
 }
 #wrapper #leftCol #bigarticle:hover,#wrapper #leftCol .article:hover, #wrapper #leftCol #about_us:hover{box-shadow: 0 0 50px gray;}
-#wrapper #leftCol #bigarticle img{margin: -7px 15px 0 -8px;}
 #wrapper #leftCol #bigarticle p {
 	width: 90%;
 	margin-left: 5%;
+}
+#wrapper #leftCol #bigarticle img{
+	margin-bottom: 20px;
 }
 #wrapper #leftCol .article{
 	width: 42.5%;
 	margin-left: 5%;
 	background-color: white;
 	/*box-shadow: 0 0 15px gray;*/
-	
 	float: left;
 }
 #wrapper #leftCol .article img{
@@ -234,7 +245,7 @@ footer #social a img{
 }
 /*-------------------Сылки-----*/
 a{
-	color: #f0004f;
+	color: #666;
 	text-decoration: none;
 	font-size: 1.2em;
 }
@@ -252,8 +263,220 @@ a, a:hover,#wrapper #leftCol #bigarticle,#wrapper #leftCol #bigarticle:hover, #w
 .clear{clear: both;}
 .blue{color: #0E0FBB;}
 .red{color:#D30012;}
+.more{color:#D30012;}
 /*-----------ID---------------*/
 #N{
-	border-radius: 23px;
-	margin-left: 13px;
+	border-radius: 27px;
+	margin-left: 0px;
+}
+}
+/*Для Сматрфонов и планшетов с вертекальной ориентацией и шириной экрвна минимум 800px*/
+@media(max-width: 801px) and (orientation: portrait){
+	/*---------------header------------*/
+header{
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fff;
+	box-shadow: 0 0 50px gray;
+	margin-bottom: 10px;
+}
+header #logo{
+	width: 100%;
+	float: left;
+	font-size: 0.9em;
+	margin: 15px 0 15px 0;
+	text-align: center;	
+	font-family: Mistral, monospace;
+}
+header #menu_head, header #regauth{
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+header #logo #T{color:#FF3C00;}
+header #logo a, header #logo a:hover{
+	color: #666;
+	transition: none;
+	font-size: 2.5em;
+}
+header #menu_head div, header #regauth div{ 
+	margin-right: 10%;
+	padding-right: 3px;
+	background-color: #FBF6F6;
+	border-radius: 5px;
+}
+header #regauth div{float : left;}
+header #menu_head div{float: left;}
+header #menu_head a, header #menu_head a:hover, header #regauth a, header #regauth a:hover{
+	color:#666;
+	transition: none;
+	font-size: 1.2em;
+}
+/*---------------ТЕЛО-------*/
+#wrapper{
+	width: 100%;
+	float: left;
+}
+#wrapper #leftCol{
+	min-height: 200px;
+	padding: 1%;
+	width: 98%;
+	float: left;
+}
+#wrapper #rightCol{
+	width: 98%;
+	padding: 1%;
+	float: left;
+}
+#wrapper #rightCol .banner{
+	width: 80%;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-top: 10px;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+#wrapper #leftCol #bigarticle, #wrapper #leftCol .article{
+	width: 95%;
+	min-height: 200px;
+	float: left;
+	margin-left: 1.5%;
+	background-color: white;
+	padding: 1%;
+	margin-bottom: 10px;
+}
+#wrapper #leftCol #bigarticle:hover,#wrapper #leftCol .article:hover, #wrapper #leftCol #about_us:hover{box-shadow: 0 0 50px gray;}
+#wrapper #leftCol #bigarticle p {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+#wrapper #leftCol #bigarticle img{
+	margin-bottom: 10px;
+}
+
+#wrapper #leftCol .article img{
+	margin-bottom: 5px;
+	width: 100%;
+}
+#wrapper #leftCol .article p{
+	width: 90%;
+	margin-left: 5%;
+}
+#wrapper #leftCol .article h2, #wrapper #leftCol #bigarticle h2, #wrapper #leftCol #about_us h2{
+	font-weight: normal;
+	color: #666;
+	font-family: mistral;
+}
+/*-------------- О нас--------*/
+#wrapper #leftCol #about_us{
+	width: 90%;
+	margin-left: 3%;
+	background-color: white;
+	padding: 2%;
+}
+/*------------------Обратная связь-------*/
+#wrapper #leftCol input.text{
+	width: 90%;
+	float: left;
+	padding: 5px;
+	color: #8A8A89;
+	height: 20px;
+	margin: 10px 0 10px 3%;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+#wrapper #leftCol input.text:focus, #wrapper #leftCol textarea:focus{
+	border: 1px solid black;
+}
+#wrapper #leftCol textarea{
+	padding: 5px;
+	margin: 5px;
+	margin-left: calc(5% - 5px);
+	color: #8A8A89;
+	float: left;
+	font-size: 1.1em;
+	cursor: pointer;
+	resize: none;
+	width: 90%;
+}
+#wrapper #leftCol #done{
+	float: left;
+	height: 5%;
+	margin-left: 43%;
+	padding: 3px;
+	font-size: 0.8em;
+}
+#wrapper #leftCol label{
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+#error{
+	float: left;
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+/*----------------footer-------*/
+footer{
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: white;
+	box-shadow: 0 0 50px gray;
+	margin-top: 20px;
+	min-height: 100px;
+}
+footer #social{
+	float: left;
+	width: 100%;
+}
+footer #rights{
+	float: left;
+	width: 100%;
+	text-align: right;
+}
+footer #social a img{
+	float: left;
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+	margin: 15px;
+}
+/*-------------------Сылки-----*/
+a{
+	color: #666;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+a:hover {
+	color: #666;
+}
+a, a:hover,#wrapper #leftCol #bigarticle,#wrapper #leftCol #bigarticle:hover, #wrapper #leftCol .article, #wrapper #leftCol .article:hover, #wrapper #leftCol #about_us, #wrapper #leftCol #about_us:hover {
+	-webkit-transition: all.7s ease;
+	-moz-transition: all.7s ease;
+	-o-transition: all.7s ease;
+	-ms-transition: all.7s ease;
+	transition: all.7s ease;
+}
+/*----------Классы------------*/
+.clear{clear: both;}
+.blue{color: #0E0FBB;}
+.red{color:#D30012;}
+.more{color:#D30012;}
+/*-----------ID---------------*/
+#N{
+	border-radius: 50px;
+	margin-left: 0px;
+}	
 }

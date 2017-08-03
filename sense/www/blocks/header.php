@@ -6,6 +6,6 @@
    			<a href="/about.php"><div>О нас </div></a><a href="/feedback.php"><div>Обратная связь</div></a>
    		</div>
    		<div id="regauth">
-   			<a href="/reg.php"><div>Регистрация</div></a>  <a href="auth/php"><div>Вход</div></a>
+   			  <a href="auth/php"><div>Вход</div></a><a href="/reg.php"><div>Регистрация</div></a>
    		</div>
 </header>
